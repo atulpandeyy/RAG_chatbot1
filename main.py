@@ -1,13 +1,7 @@
-# ============================================================
-#  RAG Chatbot Backend  –  LangChain + Flask
-#  File: app.py
-# ============================================================
-
 import os
 from flask import Flask, request, jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 
-# LangChain imports
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
